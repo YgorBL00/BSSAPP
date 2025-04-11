@@ -11,7 +11,7 @@ public class MainFrame extends JFrame {
         setLocationRelativeTo(null);
 
         JTabbedPane tabbedPane = new JTabbedPane();
-        PainelCalculatorPanel painelPanel = new PainelCalculatorPanel(tabbedPane);
+        PainelCalculatorPanel painelPanel = new PainelCalculatorPanel();
         tabbedPane.addTab("Cálculo de Painéis", painelPanel);
         tabbedPane.addTab("Carga Térmica", new CargaTermicaPanel(painelPanel));
 
