@@ -1,24 +1,16 @@
 package model;
 
 public class RecomendacaoEquipamento {
-    public final String tipoProduto; // Resfriado ou Congelado
-    public final String fase; // Monofásico ou Trifásico
-    public final double cargaMin;
-    public final double cargaMax;
-    public final String compressor;
-    public final String evaporadora;
+    public final String condensadora, evaporadora, potencia, gas, fase;
     public final int ventiladores;
-    public final String gas;
 
-    public RecomendacaoEquipamento(String tipoProduto, String fase, double cargaMin, double cargaMax,
-                                   String compressor, String evaporadora, int ventiladores, String gas) {
-        this.tipoProduto = tipoProduto;
-        this.fase = fase;
-        this.cargaMin = cargaMin;
-        this.cargaMax = cargaMax;
-        this.compressor = compressor;
+    public RecomendacaoEquipamento(String condensadora, String evaporadora, String potencia,
+                                   int ventiladores, String gas, String fase) {
+        this.condensadora = condensadora;
         this.evaporadora = evaporadora;
+        this.potencia = potencia;
         this.ventiladores = ventiladores;
         this.gas = gas;
+        this.fase = fase;
     }
 }
